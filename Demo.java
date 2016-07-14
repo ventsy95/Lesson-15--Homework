@@ -18,13 +18,28 @@ public class Demo {
 		people[5] = secondEmployee;
 
 		for (int index = 0; index < people.length; index++) {
-			if (people[index] instanceof Student) {
-				((Student) people[index]).showStudentInfo();
-			}
-			if (people[index] instanceof Employee) {
-				((Employee) people[index]).showEmployeeInfo();
+			if (people[index] != null) {
+				if (people[index] instanceof Student) {
+					((Student) people[index]).showStudentInfo();
+				}
+				if (people[index] instanceof Employee) {
+					((Employee) people[index]).showEmployeeInfo();
+				} 
+				if(!(people[index] instanceof Student)&& !(people[index] instanceof Employee)){
+					people[index].showPersonInfo();
+				}
 			} else {
-				people[index].showPersonInfo();
+				break;
+			}
+		}
+
+		for (int index = 0; index < people.length; index++) {
+			if (people[index] != null) {
+				if (people[index] instanceof Employee) {
+					System.out.println("Extra hours money: " + ((Employee) people[index]).calculateOvertime(2));
+				}
+			} else {
+				break;
 			}
 		}
 	}
