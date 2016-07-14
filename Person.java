@@ -17,4 +17,17 @@ public class Person {
 		}
 		this.isMale = isMale;
 	}
+	
+	void showPersonInfo(){
+		System.out.println("Information about this person: ");
+		System.out.print("Name: "+this.name);
+		System.out.println(" | ");
+		System.out.println("Age: "+this.age);
+		System.out.println(" | ");
+		if(this.isMale==true){
+			System.out.println("Sex: male");
+		}else{
+			System.out.println("Sex: female");
+		}
+	}
 }
