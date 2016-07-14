@@ -23,7 +23,7 @@ public class Employee extends Person {
 	void showEmployeeInfo(){
 		this.showPersonInfo();
 		System.out.print(" | ");
-		System.out.print("Daily Salary: "+ this.getDaySalary());
+		System.out.println("Daily Salary: "+ this.getDaySalary());
 	}
 
 	public double getDaySalary() {
