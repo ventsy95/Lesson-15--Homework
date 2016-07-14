@@ -19,6 +19,12 @@ public class Employee extends Person {
 			return ((this.daySalary / WORKING_SHIFT_HOURS) * COEFFICIENT_FOR_EXTRA_HOURS) * hours;
 		}
 	}
+	
+	void showEmployeeInfo(){
+		this.showPersonInfo();
+		System.out.print(" | ");
+		System.out.print("Daily Salary: "+ this.getDaySalary());
+	}
 
 	public double getDaySalary() {
 		return daySalary;
