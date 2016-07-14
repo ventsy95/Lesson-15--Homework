@@ -21,9 +21,9 @@ public class Person {
 	void showPersonInfo(){
 		System.out.println("Information about this person: ");
 		System.out.print("Name: "+this.name);
-		System.out.println(" | ");
-		System.out.println("Age: "+this.age);
-		System.out.println(" | ");
+		System.out.print(" | ");
+		System.out.print("Age: "+this.age);
+		System.out.print(" | ");
 		if(this.isMale==true){
 			System.out.println("Sex: male");
 		}else{
